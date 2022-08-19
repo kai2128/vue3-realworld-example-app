@@ -33,7 +33,7 @@ jobs:
     name: Unit test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@elaine
+      - uses: actions/checkout@master
 
       # https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping
       - name: Use Node.js 16.x
