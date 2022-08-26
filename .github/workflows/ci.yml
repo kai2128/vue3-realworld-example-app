@@ -2,7 +2,7 @@ name: Continous Integration
 
 on:
  push:
-    branches: [master]
+    branches: [master, elaine]
  pull_request:
     branches: [master]
 
@@ -46,6 +46,9 @@ jobs:
 
       - name: Unit test
         run: yarn test:unit:ci
+      
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
     
   e2e_tests:
     name: E2E test
@@ -65,3 +68,4 @@ jobs:
 
       - name: E2E test
         run: yarn test:e2e:ci
+  
