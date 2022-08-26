@@ -2,6 +2,7 @@
 [![codecov](https://codecov.io/gh/kai2128/vue3-realworld-example-app/branch/master/graph/badge.svg)](https://codecov.io/gh/kai2128/vue3-realworld-example-app)
 [![Continous Integration](https://github.com/kai2128/vue3-realworld-example-app/actions/workflows/ci.yml/badge.svg)](https://github.com/kai2128/vue3-realworld-example-app/actions/workflows/ci.yml)
 [![Continous Deployment](https://github.com/kai2128/vue3-realworld-example-app/actions/workflows/cd.yml/badge.svg)](https://github.com/kai2128/vue3-realworld-example-app/actions/workflows/cd.yml)
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=kai2128_vue3-realworld-example-app)
 
 Deployed on [https://scc-assigment-cd.netlify.app/](https://scc-assigment-cd.netlify.app/#/)
 

@@ -3,6 +3,8 @@ name: Continous Integration
 on:
  push:
     branches: [master, elaine]
+    paths-ignore:
+      - 'README.md'
  pull_request:
     branches: [master]
 
