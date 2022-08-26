@@ -2,6 +2,8 @@ import { api } from 'src/services'
 import type { Article } from 'src/services/api'
 import useAsync from 'src/utils/use-async'
 import type { ComputedRef } from 'vue'
+import { useUserStore } from 'src/store/user'
+import { routerPush } from 'src/router'
 
 interface useFavoriteArticleProps {
   isFavorited: ComputedRef<boolean>
