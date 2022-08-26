@@ -11,6 +11,9 @@ interface useFavoriteArticleProps {
 
 export const useFavoriteArticle = ({ isFavorited, articleSlug, onUpdate }: useFavoriteArticleProps) => {
   const favoriteArticle = async () => {
+    if (!useUserStore().isAuthorized) {
+      routerPush('login')
+    }
     const requestor = isFavorited.value ? api.articles.deleteArticleFavorite : api.articles.createArticleFavorite
     const article = await requestor(articleSlug.value).then(res => res.data.article)
     onUpdate(article)
