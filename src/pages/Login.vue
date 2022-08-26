@@ -88,7 +88,7 @@ const login = async () => {
       updateUser(result.data.user)
       await routerPush('global-feed')
     } 
-  }catch (error: Error){
+  }catch (error: any){
     errors.value = error.error.errors
   }
 }
