@@ -82,13 +82,13 @@ const login = async () => {
 
   if (!formRef.value?.checkValidity()) return
 
-  try{
+  try {
     const result = await api.users.login({ user: form })
     if (result.ok) {
       updateUser(result.data.user)
       await routerPush('global-feed')
-    } 
-  }catch (error: any){
+    }
+  } catch (error: any) {
     errors.value = error.error.errors
   }
 }
