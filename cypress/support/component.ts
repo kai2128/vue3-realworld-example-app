@@ -30,9 +30,9 @@ import type {
 } from 'vue'
 import type { Router } from 'vue-router'
 import { createMemoryHistory, createRouter } from 'vue-router'
-
+import '@cypress/code-coverage/support'
 type PublicProps = VNodeProps & AllowedComponentProps & ComponentCustomProps
-type RouterOptions = {router?: Router}
+type RouterOptions = { router?: Router }
 
 type Mount = <PropsOrPropOptions = {}, RawBindings = {}, D = {}, C extends ComputedOptions = ComputedOptions, M extends MethodOptions = MethodOptions, Mixin extends ComponentOptionsMixin = ComponentOptionsMixin, Extends extends ComponentOptionsMixin = ComponentOptionsMixin, E extends EmitsOptions = Record<string, any>, EE extends string = string, PP = PublicProps, Props = Readonly<ExtractPropTypes<PropsOrPropOptions>>, Defaults = ExtractDefaultPropTypes<PropsOrPropOptions>>(
   component: DefineComponent<PropsOrPropOptions, RawBindings, D, C, M, Mixin, Extends, E, EE, PP, Props, Defaults>,

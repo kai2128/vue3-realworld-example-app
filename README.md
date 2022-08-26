@@ -1,5 +1,5 @@
 # ![RealWorld Example App](logo.png)
-
+# [![codecov](https://codecov.io/gh/kai2128/vue3-realworld-example-app/branch/master/graph/badge.svg)](https://codecov.io/gh/kai2128/vue3-realworld-example-app)
 # Forked from [mutoe/vue3-realworld-example-app](https://github.com/mutoe/vue3-realworld-example-app)
 
 # Task Todo:
