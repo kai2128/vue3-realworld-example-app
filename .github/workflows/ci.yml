@@ -2,7 +2,7 @@ name: Continous Integration
 
 on:
  push:
-    branches: [master, elaine]
+    branches: [master]
     paths-ignore:
       - 'README.md'
  pull_request:
@@ -12,7 +12,6 @@ jobs:
   lint:
     name: Lint
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@master
 
@@ -55,7 +54,6 @@ jobs:
   e2e_tests:
     name: E2E test
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@master
 
